@@ -17,9 +17,9 @@ export default function Nav() {
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
             <Box>Logo</Box>
             <Stack spacing={3} direction={"row"}>
-                <Link>Home</Link>
-                <Link>About</Link>
-                <Link>Proyects</Link>
+                <Button variant="outline" color="blue.300">Habilities</Button>
+                <Button variant="outline" color="blue.300">Formation</Button>
+                <Button variant="outline" color="blue.300">About</Button>
             </Stack>  
             <Flex alignItems={'center'}>
                 <Stack direction={'row'} spacing={7}>

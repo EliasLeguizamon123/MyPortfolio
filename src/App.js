@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header'
 import Main from './components/Main'
-import { Box, Text } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 function App() {
   return (
