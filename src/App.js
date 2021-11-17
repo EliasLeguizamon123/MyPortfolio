@@ -1,14 +1,13 @@
 import './App.css';
 import Header from './components/Header'
+import Main from './components/Main'
 import { Box, Text } from '@chakra-ui/react'
 
 function App() {
   return (
     <Box className="App">
+      <Main />
       <Header />
-      <Text>
-        Hola mundo
-      </Text>
     </Box>
   );
 }
