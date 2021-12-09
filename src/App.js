@@ -1,14 +1,9 @@
 import './App.css';
-import Header from './components/Header'
-import Main from './components/Main'
-import { Box } from '@chakra-ui/react'
+import Routers from './router/Router';
 
 function App() {
   return (
-    <Box className="App">
-      <Main />
-      <Header />
-    </Box>
+    <Routers />
   );
 }
 
