@@ -17,8 +17,8 @@ export default function Routers() {
                     ]}/>
             </Box>
             <Routes>
-                <Route exact path="/" element={Main} />
-                <Route exact path="/skills" element={Skills} />
+                <Route exact path="/" element={<Main />} />
+                <Route exact path="/skills" element={<Skills />} />
             </Routes>
         </Router>
     )
