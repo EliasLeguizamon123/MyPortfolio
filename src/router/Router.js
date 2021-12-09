@@ -3,7 +3,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Skills from '../components/Skills'
-import { Box } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 
 export default function Routers() {
     return (
@@ -16,10 +16,13 @@ export default function Routers() {
                     { path: '/about', label: 'About' },
                     ]}/>
             </Box>
-            <Routes>
-                <Route exact path="/" element={<Main />} />
-                <Route exact path="/skills" element={<Skills />} />
-            </Routes>
+            
+            <Container maxW="100%" >
+                <Routes>
+                    <Route exact path="/" element={<Main />} />
+                    <Route exact path="/skills" element={<Skills />} />
+                </Routes>
+            </Container>
         </Router>
     )
 }
