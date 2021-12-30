@@ -10,9 +10,8 @@ import {
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
 
-const Header = ({
-  nav = [{path:'/skills', label:'Skills'}]
-  }) => {    
+const Header = ({ nav = [{path:'/skills', label:'Skills'}] }) => {    
+  
   const { colorMode, toggleColorMode } = useColorMode();
   
   let navItems = nav.map((link, index) => (
