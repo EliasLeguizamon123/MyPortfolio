@@ -44,14 +44,15 @@ const Header = ({ nav = [{path:'/skills', label:'Skills'}] }) => {
            <Stack spacing={3} direction={"row"}>
              {navItems}
              <Button onClick={toggleColorMode}>
-                       {colorMode === 'light' ? 
-                         <MoonIcon color='blue.200'/> : 
-                         <SunIcon color='yellow.200'/>}
-                   </Button>
+                {colorMode === 'light' ? 
+                  <MoonIcon color='green.200'/> : 
+                  <SunIcon color='orange.200'/>
+                }
+              </Button>
            </Stack>  
        </Flex>
        :
-        <Stack direction={"row"} align="center" justify="center" h={16} spacing={4}>
+        <Stack direction={"row"} align="center" justify="center" h={16} spacing={6}>
           <Image 
             src={logoImage}
             alt="logo"  
@@ -59,7 +60,13 @@ const Header = ({ nav = [{path:'/skills', label:'Skills'}] }) => {
             fallbackSrc='https://via.placeholder.com/150'
             boxSize={'55px'}
           />
-            <Text fontSize="xl" as="del">Elías Leguizamón</Text>
+            <Text fontSize="xl" as="i">Elías Leguizamón</Text>
+            <Button onClick={toggleColorMode} >
+                {colorMode === 'light' ? 
+                  <MoonIcon color='green.200'/> : 
+                  <SunIcon color='orange.200'/>
+                }
+              </Button>
         </Stack>
         // null
       }

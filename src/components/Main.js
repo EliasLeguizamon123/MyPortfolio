@@ -10,7 +10,7 @@ const dummys = [
 ]
 
 const seccions = dummys.map((dummy) => (
-    <Stack key={dummy.id} bgGradient="linear(to-r, red.500, yellow.500)">
+    <Stack key={dummy.id} bgGradient="linear(to-br, red.500, yellow.500)">
         <Flex key={dummy.id} w={"100vw"} h={"100vh"}  align="center" justify="center">
             <h1>{dummy.name}</h1>
         </Flex>
