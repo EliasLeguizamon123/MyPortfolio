@@ -19,7 +19,7 @@ export default function Routers() {
             
             <Box maxW="100%" maxH='95%'>
                 <Routes>
-                    <Route exact path="/" element={<Main />} />
+                    <Route exact path="/" element={<Main/>} />
                     <Route exact path="/skills" element={<Skills />} />
                     <Route exact path="/about" element={<Skills />} />
                 </Routes>
