@@ -28,5 +28,26 @@ module.exports = {
         'react/jsx-uses-react': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/prop-types': 'off',
+        'no-console': 'warn',
+        'react/self-closing-comp': 'warn',
+        'react/jsx-sort-props': [
+            'warn',
+            {
+                callbacksLast: true,
+                shorthandFirst: true,
+                reservedFirst: true,
+                noSortAlphabetically: false,
+            },
+        ],
+        'padding-line-between-statements': [
+            'error',
+            { blankLine: 'always', prev: '*', next: 'return' },
+            { blankline: 'always', prev: ['const', 'let', 'var'], next: '*' },
+            {
+                blankline: 'always',
+                prev: ['const', 'let', 'var'],
+                 next: ['const', 'let', 'var'],
+            },
+        ],
     },
 };

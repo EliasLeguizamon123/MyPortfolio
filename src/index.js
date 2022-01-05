@@ -6,7 +6,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import theme from './theme';
 
 ReactDOM.render(
-    <ChakraProvider theme={theme}>
+    <ChakraProvider bg="useColorModeValue('gray.50', 'gray.900')" theme={theme}>
         <App />
     </ChakraProvider>,
     document.getElementById('root')
