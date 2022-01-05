@@ -1,7 +1,5 @@
-import { Text } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react';
 
-export default function Skills(){
-    return(
-        <Text>Hola skills</Text>
-    )
+export default function Skills() {
+    return <Text>Hola skills</Text>;
 }

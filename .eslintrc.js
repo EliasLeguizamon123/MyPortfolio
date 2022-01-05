@@ -3,7 +3,11 @@ module.exports = {
         browser: true,
         es2021: true,
     },
-    extends: ['plugin:react/recommended', 'plugin:prettier/recommended'],
+    extends: [
+        'plugin:react/recommended',
+        'plugin:prettier/recommended',
+        'eslint:recommended',
+    ],
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
@@ -21,6 +25,8 @@ module.exports = {
                 endOfLine: 'auto',
             },
         ],
-        "react/prop-types": [<enabled>, { ignore: <ignore>, customValidators: <customValidator>, skipUndeclared: <skipUndeclared> }]
+        'react/jsx-uses-react': 'off',
+        'react/react-in-jsx-scope': 'off',
+        'react/prop-types': 'off',
     },
 };

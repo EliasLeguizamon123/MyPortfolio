@@ -1,4 +1,3 @@
-// eslint-disable-next-line prettier/prettier
 import {
     Box,
     Flex,
@@ -13,7 +12,12 @@ import {
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
 
-const Header = ({ nav = [{ path: '/skills', label: 'Skills' }] }) => {
+const Header = () => {
+    const nav = [
+        { path: '/skills', label: 'Skills' },
+        { path: '/formation', label: 'Formation' },
+        { path: '/about', label: 'About' },
+    ];
     const [isMobile] = useMediaQuery('(max-width: 30em)');
 
     const { colorMode, toggleColorMode } = useColorMode();
