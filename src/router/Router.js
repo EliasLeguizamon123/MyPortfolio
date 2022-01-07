@@ -7,15 +7,15 @@ import { Box } from '@chakra-ui/react';
 export default function Routers() {
     return (
         <Router>
-            <Box className="App">
+            <Box>
                 <Header />
             </Box>
 
-            <Box maxW="100%" maxH="95%">
+            <Box maxH="95%" maxW="100%">
                 <Routes>
-                    <Route exact path="/" element={<Main />} />
-                    <Route exact path="/skills" element={<Skills />} />
-                    <Route exact path="/about" element={<Skills />} />
+                    <Route exact element={<Main />} path="/" />
+                    <Route exact element={<Skills />} path="/skills" />
+                    <Route exact element={<Skills />} path="/about" />
                 </Routes>
             </Box>
         </Router>

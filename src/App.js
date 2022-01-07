@@ -4,7 +4,7 @@ import Router from './router/Router';
 
 function App() {
     return (
-        <Box>
+        <Box bg="useColorModeValue('gray.50', 'gray.900')">
             <Router />
         </Box>
     );

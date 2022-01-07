@@ -27,8 +27,8 @@ const Header = () => {
     let navItems = nav.map((link, index) => (
         <Link key={index} to={link.path}>
             <Button
-                variant="ghost"
                 color={colorMode === 'light' ? 'blueCake' : 'yellowCake'}
+                variant="ghost"
             >
                 {link.label}
             </Button>
@@ -36,30 +36,30 @@ const Header = () => {
     ));
     return (
         <>
-            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+            <Box bg={useColorModeValue('gray.50', 'gray.900')} px={4}>
                 {
                     isMobile ? (
                         <Flex
-                            h={16}
                             alignItems={'center'}
+                            h={16}
                             justifyContent={'space-between'}
                         >
                             <Link to="/">
                                 <Box>
                                     <Image
-                                        src={logoImage}
                                         alt="logo"
                                         borderRadius="full"
-                                        fallbackSrc="https://via.placeholder.com/150"
                                         boxSize={'55px'}
+                                        fallbackSrc="https://via.placeholder.com/150"
+                                        src={logoImage}
                                     />
                                 </Box>
                             </Link>
-                            <Stack spacing={3} direction={'row'}>
+                            <Stack direction={'row'} spacing={3}>
                                 {navItems}
                                 <Button onClick={toggleColorMode}>
                                     {colorMode === 'light' ? (
-                                        <MoonIcon color="green.200" />
+                                        <MoonIcon color="teal.200" />
                                     ) : (
                                         <SunIcon color="orange.200" />
                                     )}
@@ -68,20 +68,20 @@ const Header = () => {
                         </Flex>
                     ) : (
                         <Stack
-                            direction={'row'}
                             align="center"
-                            justify="center"
+                            direction={'row'}
                             h={16}
+                            justify="center"
                             spacing={6}
                         >
                             <Image
-                                src={logoImage}
                                 alt="logo"
                                 borderRadius="full"
-                                fallbackSrc="https://via.placeholder.com/150"
                                 boxSize={'55px'}
+                                fallbackSrc="https://via.placeholder.com/150"
+                                src={logoImage}
                             />
-                            <Text fontSize="xl" as="i">
+                            <Text as="i" fontSize="xl">
                                 Elías Leguizamón
                             </Text>
                             <Button onClick={toggleColorMode}>

@@ -1,5 +1,6 @@
 import HorizontalScroll from 'react-scroll-horizontal';
-import { Box, Stack, Flex } from '@chakra-ui/react';
+import { Box, Stack } from '@chakra-ui/react';
+import Sections from './Sections';
 
 const dummies = [
     { id: 1, name: 'Hello 1' },
@@ -9,21 +10,13 @@ const dummies = [
 ];
 
 const sections = dummies.map((dummy) => (
-    <Stack key={dummy.id} bgGradient="linear(to-br, red.500, yellow.500)">
-        <Flex
-            key={dummy.id}
-            w={'100vw'}
-            h={'100vh'}
-            align="center"
-            justify="center"
-        >
-            <h1>{dummy.name}</h1>
-        </Flex>
+    <Stack key={dummy.id}>
+        <Sections dummy={dummy} />
     </Stack>
 ));
 export default function Main() {
     return (
-        <Box w="100%" h="89.8vh">
+        <Box h="89.8vh" w="100%">
             <HorizontalScroll>{sections}</HorizontalScroll>
         </Box>
     );
