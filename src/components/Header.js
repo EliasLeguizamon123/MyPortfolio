@@ -34,6 +34,7 @@ const Header = () => {
             </Button>
         </Link>
     ));
+
     return (
         <>
             <Box bg={useColorModeValue('gray.50', 'gray.900')} px={4}>
@@ -99,4 +100,5 @@ const Header = () => {
         </>
     );
 };
+
 export default Header;

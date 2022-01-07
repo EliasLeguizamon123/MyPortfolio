@@ -1,4 +1,6 @@
 import { Flex, Text, useColorModeValue, Box } from '@chakra-ui/react';
+import Fade from 'react-reveal/Fade';
+
 export default function Sections(dummy) {
     return (
         <Flex
@@ -17,9 +19,11 @@ export default function Sections(dummy) {
                 shadow={'md'}
                 w={'70%'}
             >
-                <Text as="i" fontSize="xl">
-                    {dummy.dummy.name}
-                </Text>
+                <Fade bottom>
+                    <Text as="i" fontSize="xl">
+                        {dummy.dummy.name}
+                    </Text>
+                </Fade>
             </Box>
         </Flex>
     );

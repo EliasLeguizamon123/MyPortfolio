@@ -14,10 +14,13 @@ const sections = dummies.map((dummy) => (
         <Sections dummy={dummy} />
     </Stack>
 ));
+
 export default function Main() {
     return (
         <Box h="89.8vh" w="100%">
-            <HorizontalScroll>{sections}</HorizontalScroll>
+            <HorizontalScroll animValues={2} reverseScroll={'true'}>
+                {sections}
+            </HorizontalScroll>
         </Box>
     );
 }
