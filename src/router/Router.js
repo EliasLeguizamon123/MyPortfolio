@@ -19,7 +19,6 @@ export default function Routers() {
                     <Route exact element={<Skills />} path="/skills" />
                     <Route exact element={<Skills />} path="/about" />
                     <Route exact element={<Navbar />} path="/test" />
-                    <Route exact element={<Slider />} path="/test2" />
                 </Routes>
             </Box>
         </Router>

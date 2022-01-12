@@ -38,64 +38,66 @@ const Header = () => {
     return (
         <>
             <Box bg={useColorModeValue('gray.50', 'gray.900')} px={4}>
-                {
-                    isMobile ? (
-                        <Flex
-                            alignItems={'center'}
-                            h={16}
-                            justifyContent={'space-between'}
-                        >
-                            <Link to="/">
-                                <Box>
-                                    <Image
-                                        alt="logo"
-                                        borderRadius="full"
-                                        boxSize={'55px'}
-                                        fallbackSrc="https://via.placeholder.com/150"
-                                        src={logoImage}
-                                    />
-                                </Box>
-                            </Link>
-                            <Stack direction={'row'} spacing={3}>
-                                {navItems}
-                                <Button onClick={toggleColorMode}>
-                                    {colorMode === 'light' ? (
-                                        <MoonIcon color="teal.200" />
-                                    ) : (
-                                        <SunIcon color="orange.200" />
-                                    )}
-                                </Button>
-                            </Stack>
-                        </Flex>
-                    ) : (
-                        <Stack
-                            align="center"
-                            direction={'row'}
-                            h={16}
-                            justify="center"
-                            spacing={6}
-                        >
-                            <Image
-                                alt="logo"
-                                borderRadius="full"
-                                boxSize={'55px'}
-                                fallbackSrc="https://via.placeholder.com/150"
-                                src={logoImage}
-                            />
-                            <Text as="i" fontSize="xl">
-                                Elías Leguizamón
-                            </Text>
+                {isMobile ? (
+                    <Flex
+                        alignItems={'center'}
+                        h={16}
+                        justifyContent={'space-between'}
+                    >
+                        <Link to="/">
+                            <Box>
+                                <Image
+                                    alt="logo"
+                                    borderRadius="full"
+                                    boxSize={'55px'}
+                                    fallbackSrc="https://via.placeholder.com/150"
+                                    src={logoImage}
+                                />
+                            </Box>
+                        </Link>
+                        <Stack direction={'row'} spacing={3}>
+                            {navItems}
                             <Button onClick={toggleColorMode}>
                                 {colorMode === 'light' ? (
-                                    <MoonIcon color="green.200" />
+                                    <MoonIcon color="teal.200" />
                                 ) : (
                                     <SunIcon color="orange.200" />
                                 )}
                             </Button>
                         </Stack>
-                    )
-                    // null
-                }
+                    </Flex>
+                ) : (
+                    <Stack
+                        align="center"
+                        direction={'row'}
+                        h={16}
+                        justify="center"
+                        spacing={6}
+                    >
+                        <Image
+                            alt="logo"
+                            borderRadius="full"
+                            boxSize={'55px'}
+                            fallbackSrc="https://via.placeholder.com/150"
+                            src={logoImage}
+                        />
+                        <Text as="i" fontSize="xl">
+                            Elías Leguizamón
+                        </Text>
+                        <Button onClick={toggleColorMode}>
+                            {colorMode === 'light' ? (
+                                <MoonIcon color="green.200" />
+                            ) : (
+                                <SunIcon color="orange.200" />
+                            )}
+                        </Button>
+                        <Link to="/test">
+                            <Button>
+                                <Text>TEST</Text>
+                            </Button>
+                        </Link>
+                    </Stack>
+                )}
             </Box>
         </>
     );
