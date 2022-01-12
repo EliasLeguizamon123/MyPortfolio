@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Main from '../components/Main';
-import Slider from '../components/Slider';
 import Skills from '../components/Skills';
 import { Box } from '@chakra-ui/react';
 
