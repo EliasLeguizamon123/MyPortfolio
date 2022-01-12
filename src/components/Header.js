@@ -16,7 +16,6 @@ const Header = () => {
     const nav = [
         { path: '/skills', label: 'Skills' },
         { path: '/formation', label: 'Formation' },
-        { path: '/about', label: 'About' },
         { path: '/test', label: 'Test' },
     ];
     const [isMobile] = useMediaQuery('(max-width: 30em)');
