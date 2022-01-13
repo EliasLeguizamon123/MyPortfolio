@@ -14,7 +14,6 @@ export default function Routers() {
                     <Route exact element={<Main />} path="/" />
                     <Route exact element={<Skills />} path="/skills" />
                     <Route exact element={<Skills />} path="/about" />
-                    <Route exact element={<Navbar />} path="/test" />
                 </Routes>
             </Box>
         </Router>
