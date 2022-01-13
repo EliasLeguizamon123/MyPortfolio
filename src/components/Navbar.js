@@ -7,11 +7,15 @@ const Navbar = () => {
 
     return (
         <VStack
-            bg="tomato"
             borderRight="1px solid"
             h="full"
             pos="fixed"
-            style={{ zIndex: 9999, margin: '1px solid red' }}
+            style={{
+                zIndex: 9999,
+                margin: '1px solid red',
+                backdropFilter: 'blur 2px',
+                opacity: 0,
+            }}
             w={20}
         >
             <Flex
