@@ -1,7 +1,7 @@
 import { Flex, Text, useColorModeValue, Box } from '@chakra-ui/react';
 import Fade from 'react-reveal/Fade';
 
-export default function Sections(dummy) {
+export default function Section(dummy) {
     return (
         <Flex
             align="center"

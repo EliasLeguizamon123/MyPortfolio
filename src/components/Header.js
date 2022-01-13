@@ -18,9 +18,11 @@ const Header = () => {
         { path: '/formation', label: 'Formation' },
         { path: '/test', label: 'Test' },
     ];
+
     const [isMobile] = useMediaQuery('(max-width: 30em)');
 
     const { colorMode, toggleColorMode } = useColorMode();
+
     const logoImage =
         'https://avatars.githubusercontent.com/u/25516473?s=400&u=58049da37eaf5d050270ef502caacfb79c9f8dda&v=4';
 

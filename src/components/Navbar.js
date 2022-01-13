@@ -6,7 +6,14 @@ const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
 
     return (
-        <VStack bg="tomato" borderRight="1px solid" h="full" pos="fixed" w={20}>
+        <VStack
+            bg="tomato"
+            borderRight="1px solid"
+            h="full"
+            pos="fixed"
+            style={{ zIndex: 9999, margin: '1px solid red' }}
+            w={20}
+        >
             <Flex
                 alignItems={'center'}
                 direction={'column'}
