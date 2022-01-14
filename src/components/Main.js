@@ -24,7 +24,7 @@ const sections = dummies.map((dummy) => (
 
 export default function Main() {
     return (
-        <Box h="100vh" ml="10">
+        <Box bg="red" h="100vh" ml="10">
             <HorizontalScroll reverseScroll={'true'}>
                 {sections}
             </HorizontalScroll>

@@ -12,6 +12,7 @@ const Navbar = () => {
             pos="fixed"
             style={{
                 zIndex: 9999,
+                margin: '1px solid red',
                 backdropFilter: 'blur 2px',
                 opacity: 0,
             }}
