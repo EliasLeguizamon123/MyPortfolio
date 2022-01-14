@@ -1,13 +1,17 @@
 import HorizontalScroll from 'react-scroll-horizontal';
 import { Box, Stack } from '@chakra-ui/react';
 import Section from './Section';
+//import BG from '../duneW.svg';
+import BGD from '../duneWD.svg';
 // import anime from 'animejs/lib/anime.es.js';
 
+//const { colorMode } = useColorMode();
+
 const dummies = [
-    { id: 1, name: 'Hello 1' },
-    { id: 2, name: 'Hello 2' },
-    { id: 3, name: 'Hello 3' },
-    { id: 4, name: 'Hello 4' },
+    { id: 1, name: 'Hi !' },
+    { id: 2, name: 'My skills' },
+    { id: 3, name: 'About me' },
+    { id: 4, name: 'Contact with me' },
 ];
 
 // const animation = anime({
@@ -24,7 +28,13 @@ const sections = dummies.map((dummy) => (
 
 export default function Main() {
     return (
-        <Box bg="red" h="100vh" ml="10">
+        <Box
+            bgImage={BGD}
+            bgPosition={'center'}
+            bgSize={'cover'}
+            h="100vh"
+            ml="10"
+        >
             <HorizontalScroll reverseScroll={'true'}>
                 {sections}
             </HorizontalScroll>

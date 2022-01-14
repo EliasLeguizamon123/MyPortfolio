@@ -1,29 +1,22 @@
-import { Flex, Text, useColorModeValue, Box } from '@chakra-ui/react';
-import Fade from 'react-reveal/Fade';
+import { Flex, Text, Box } from '@chakra-ui/react';
 
 export default function Section(dummy) {
+    // const { colorMode, toggleColorMode } = useColorMode();
+
     return (
-        <Flex
-            align="center"
-            bg={useColorModeValue('gray.50', 'gray.900')}
-            h={'100vh'}
-            justify="center"
-            w={'100vw'}
-        >
+        <Flex align="center" h={'100vh'} justify="center" w={'100vw'}>
             <Box
                 align="center"
-                bg={useColorModeValue('gray.200', 'gray.700')}
+                bg={'secondary'}
                 borderRadius={'lg'}
+                boxShadow={'dark-lg'}
                 h={'70%'}
                 pt={'6'}
-                shadow={'md'}
                 w={'70%'}
             >
-                <Fade bottom>
-                    <Text as="i" fontSize="xl">
-                        {dummy.dummy.name}
-                    </Text>
-                </Fade>
+                <Text as="i" fontSize="xl">
+                    {dummy.dummy.name}
+                </Text>
             </Box>
         </Flex>
     );
