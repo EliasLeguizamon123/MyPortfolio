@@ -11,4 +11,15 @@ const theme = extendTheme({
     },
 });
 
-export default theme;
+const samurai = extendTheme({
+    colors: {
+        primary: '#000000',
+        secondary: '#989C94',
+        tertiary: '#C21515',
+    },
+    config: {
+        initialColorMode: 'dark',
+    },
+});
+
+export default { theme, samurai };

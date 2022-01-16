@@ -3,10 +3,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
-import theme from './theme';
+import { theme, samurai } from './theme';
+
+const currentTheme = samurai;
 
 ReactDOM.render(
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={currentTheme}>
         <App />
     </ChakraProvider>,
     document.getElementById('root')
