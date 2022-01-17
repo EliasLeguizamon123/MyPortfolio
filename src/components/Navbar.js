@@ -36,7 +36,7 @@ const Navbar = () => {
 
                         <Button
                             _hover={{
-                                transform: 'scale(1.8)',
+                                transform: 'scale(1)',
                                 color: 'white',
                             }}
                             size="xl"
@@ -51,7 +51,7 @@ const Navbar = () => {
                     <Box alignItems={'center'}>
                         <Button
                             _hover={{
-                                transform: 'scale(1.8)',
+                                transform: 'scale(1)',
                                 color: 'white',
                             }}
                             size="xl"
@@ -68,7 +68,7 @@ const Navbar = () => {
                     {/* Skills */}
                     <Button
                         _hover={{
-                            transform: 'scale(1.8)',
+                            transform: 'scale(1)',
                             color: 'white',
                         }}
                         size="xl"
@@ -82,7 +82,7 @@ const Navbar = () => {
                     {/* Projects */}
                     <Button
                         _hover={{
-                            transform: 'scale(1.8)',
+                            transform: 'scale(1)',
                             color: 'white',
                         }}
                         size="xl"
@@ -96,7 +96,7 @@ const Navbar = () => {
                     {/* About */}
                     <Button
                         _hover={{
-                            transform: 'scale(1.8)',
+                            transform: 'scale(1)',
                             color: 'white',
                         }}
                         size="xl"
@@ -110,7 +110,7 @@ const Navbar = () => {
                     {/* Contact */}
                     <Button
                         _hover={{
-                            transform: 'scale(1.8)',
+                            transform: 'scale(1)',
                             color: 'white',
                         }}
                         size="xl"
