@@ -44,8 +44,8 @@ const Navbar = () => {
                             onClick={toggleColorMode}
                         >
                             <MdLightbulbOutline />
+                            <Text size="xs">Dark</Text>
                         </Button>
-                        <Text size="xs">Dark</Text>
                     </Box>
                 ) : (
                     <Box alignItems={'center'}>
@@ -59,8 +59,8 @@ const Navbar = () => {
                             onClick={toggleColorMode}
                         >
                             <MdLightbulb />
+                            <Text size="xs">Light</Text>
                         </Button>
-                        <Text size="xs">Light</Text>
                     </Box>
                 )}
 
@@ -75,8 +75,8 @@ const Navbar = () => {
                         variant="ghost"
                     >
                         <GiAura />
+                        <Text size="xs">Skills</Text>
                     </Button>
-                    <Text size="xs">Skills</Text>
                 </Box>
                 <Box alignItems={'center'}>
                     {/* Projects */}
@@ -89,8 +89,8 @@ const Navbar = () => {
                         variant="ghost"
                     >
                         <FaProjectDiagram />
+                        <Text size="xs">Projects</Text>
                     </Button>
-                    <Text size="xs">Projects</Text>
                 </Box>
                 <Box alignItems={'center'}>
                     {/* About */}
@@ -103,8 +103,8 @@ const Navbar = () => {
                         variant="ghost"
                     >
                         <GiAmplitude />
+                        <Text size="xs">About</Text>
                     </Button>
-                    <Text size="xs">About</Text>
                 </Box>
                 <Box alignItems={'center'}>
                     {/* Contact */}
@@ -117,8 +117,8 @@ const Navbar = () => {
                         variant="ghost"
                     >
                         <GiChecklist />
+                        <Text size="xs">Contact</Text>
                     </Button>
-                    <Text size="xs">Contact</Text>
                 </Box>
             </Flex>
         </VStack>
