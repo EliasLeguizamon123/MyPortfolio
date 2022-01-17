@@ -7,9 +7,10 @@ import {
     Text,
 } from '@chakra-ui/react';
 import { MdLightbulbOutline, MdLightbulb } from 'react-icons/md';
-import { GiAmplitude, GiAura } from 'react-icons/gi';
+import { GiAura } from 'react-icons/gi';
 import { AiOutlineFolder } from 'react-icons/ai';
 import { SiMinutemailer } from 'react-icons/si';
+import { BiFace } from 'react-icons/bi';
 
 const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -103,7 +104,7 @@ const Navbar = () => {
                         size="xl"
                         variant="ghost"
                     >
-                        <GiAmplitude />
+                        <BiFace />
                         <Text size="xs">About</Text>
                     </Button>
                 </Box>
