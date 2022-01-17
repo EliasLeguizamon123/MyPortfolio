@@ -7,8 +7,9 @@ import {
     Text,
 } from '@chakra-ui/react';
 import { MdLightbulbOutline, MdLightbulb } from 'react-icons/md';
-import { GiAmplitude, GiAura, GiChecklist } from 'react-icons/gi';
-import { FaProjectDiagram } from 'react-icons/fa';
+import { GiAmplitude, GiAura } from 'react-icons/gi';
+import { AiOutlineFolder } from 'react-icons/ai';
+import { SiMinutemailer } from 'react-icons/si';
 
 const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -88,7 +89,7 @@ const Navbar = () => {
                         size="xl"
                         variant="ghost"
                     >
-                        <FaProjectDiagram />
+                        <AiOutlineFolder />
                         <Text size="xs">Projects</Text>
                     </Button>
                 </Box>
@@ -116,7 +117,7 @@ const Navbar = () => {
                         size="xl"
                         variant="ghost"
                     >
-                        <GiChecklist />
+                        <SiMinutemailer />
                         <Text size="xs">Contact</Text>
                     </Button>
                 </Box>
