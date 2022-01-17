@@ -45,7 +45,7 @@ const Navbar = () => {
                         >
                             <MdLightbulbOutline />
                         </Button>
-                        <Text size="xs">Dark mode</Text>
+                        <Text size="xs">Dark</Text>
                     </Box>
                 ) : (
                     <Box>
@@ -60,7 +60,7 @@ const Navbar = () => {
                         >
                             <MdLightbulb />
                         </Button>
-                        <Text size="xs">Light mode</Text>
+                        <Text size="xs">Light</Text>
                     </Box>
                 )}
 
@@ -76,6 +76,7 @@ const Navbar = () => {
                     >
                         <GiAura />
                     </Button>
+                    <Text size="xs">Skills</Text>
                 </Box>
                 <Box>
                     {/* Projects */}
@@ -89,6 +90,7 @@ const Navbar = () => {
                     >
                         <FaProjectDiagram />
                     </Button>
+                    <Text size="xs">Projects</Text>
                 </Box>
                 <Box>
                     {/* About */}
@@ -102,6 +104,7 @@ const Navbar = () => {
                     >
                         <GiAmplitude />
                     </Button>
+                    <Text size="xs">About</Text>
                 </Box>
                 <Box>
                     {/* Contact */}
@@ -115,6 +118,7 @@ const Navbar = () => {
                     >
                         <GiChecklist />
                     </Button>
+                    <Text size="xs">Contact</Text>
                 </Box>
             </Flex>
         </VStack>
