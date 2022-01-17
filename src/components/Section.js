@@ -12,7 +12,7 @@ export default function Section(dummy) {
                 boxShadow={'dark-lg'}
                 h={'70%'}
                 pt={'6'}
-                w={'70%'}
+                w={'60%'}
             >
                 <Heading>{dummy.dummy.name}</Heading>
                 <Text p={3}>
