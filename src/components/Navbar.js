@@ -21,7 +21,7 @@ const Navbar = () => {
             style={{
                 zIndex: 9999,
             }}
-            w={30}
+            w={32}
         >
             <Flex
                 alignItems={'center'}
