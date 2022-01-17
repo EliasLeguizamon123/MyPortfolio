@@ -1,5 +1,5 @@
-import { Text } from '@chakra-ui/react';
+import Section from './Section';
 
 export default function Skills() {
-    return <Text>Hola skills</Text>;
+    return <Section />;
 }
