@@ -45,7 +45,7 @@ const Navbar = () => {
                         >
                             <MdLightbulbOutline />
                         </Button>
-                        <Text size="sm">Color mode</Text>
+                        <Text size="xs">Dark mode</Text>
                     </Box>
                 ) : (
                     <Box>
@@ -60,7 +60,7 @@ const Navbar = () => {
                         >
                             <MdLightbulb />
                         </Button>
-                        <Text size="sm">Color mode</Text>
+                        <Text size="xs">Light mode</Text>
                     </Box>
                 )}
 
