@@ -31,7 +31,7 @@ const Navbar = () => {
                 m="12px"
             >
                 {colorMode === 'light' ? (
-                    <Box>
+                    <Box alignItems={'center'}>
                         {/* color mode */}
 
                         <Button
@@ -48,7 +48,7 @@ const Navbar = () => {
                         <Text size="xs">Dark</Text>
                     </Box>
                 ) : (
-                    <Box>
+                    <Box alignItems={'center'}>
                         <Button
                             _hover={{
                                 transform: 'scale(1.8)',
@@ -64,7 +64,7 @@ const Navbar = () => {
                     </Box>
                 )}
 
-                <Box>
+                <Box alignItems={'center'}>
                     {/* Skills */}
                     <Button
                         _hover={{
@@ -78,7 +78,7 @@ const Navbar = () => {
                     </Button>
                     <Text size="xs">Skills</Text>
                 </Box>
-                <Box>
+                <Box alignItems={'center'}>
                     {/* Projects */}
                     <Button
                         _hover={{
@@ -92,7 +92,7 @@ const Navbar = () => {
                     </Button>
                     <Text size="xs">Projects</Text>
                 </Box>
-                <Box>
+                <Box alignItems={'center'}>
                     {/* About */}
                     <Button
                         _hover={{
@@ -106,7 +106,7 @@ const Navbar = () => {
                     </Button>
                     <Text size="xs">About</Text>
                 </Box>
-                <Box>
+                <Box alignItems={'center'}>
                     {/* Contact */}
                     <Button
                         _hover={{
