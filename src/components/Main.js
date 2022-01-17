@@ -32,7 +32,7 @@ export default function Main() {
             bgPosition={'center'}
             bgSize={'cover'}
             h="100vh"
-            ml="5"
+            ml="10"
         >
             <HorizontalScroll reverseScroll={'true'}>
                 {sections}
