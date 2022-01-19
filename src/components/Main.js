@@ -1,7 +1,14 @@
 import HorizontalScroll from 'react-scroll-horizontal';
-import { Box, Stack, useColorModeValue, Text, Flex } from '@chakra-ui/react';
+import {
+    Box,
+    Stack,
+    useColorModeValue,
+    SimpleGrid,
+    Text,
+} from '@chakra-ui/react';
 import Section from './Section';
-// import anime from 'animejs/lib/anime.es.js';
+
+import { FaGithubAlt, FaLinkedinIn, FaHackerrank } from 'react-icons/fa';
 
 const dummies = [
     { id: 1, name: 'Hi !' },
@@ -9,12 +16,6 @@ const dummies = [
     { id: 3, name: 'About me' },
     { id: 4, name: 'Contact with me' },
 ];
-
-// const animation = anime({
-//     targets: '.section',
-//     easing: 'easeOutElastic',
-//     bg: 'red',
-// });
 
 const sections = dummies.map((dummy) => (
     <Stack key={dummy.id}>
@@ -26,7 +27,7 @@ export default function Main() {
     return (
         <Box
             bg={useColorModeValue('lBackground', 'background')}
-            h="95vh"
+            h="90vh"
             ml="10"
         >
             <HorizontalScroll
@@ -35,18 +36,43 @@ export default function Main() {
             >
                 {sections}
             </HorizontalScroll>
-            <Flex
+            <SimpleGrid
                 align="center"
                 bgColor={useColorModeValue('lBackground', 'background')}
-                direction={'row'}
+                columns={3}
                 h="5vh"
-                justify={'center'}
+                spacing={4}
             >
-                <Text>Imagen 1</Text>
-                <Text>Imagen 2</Text>
-                <Text>Imagen 3</Text>
-                <Text>Imagen 4</Text>
-            </Flex>
+                <a
+                    href="https://github.com/EliasLeguizamon123"
+                    rel="my-github noreferrer"
+                    target="_blank"
+                >
+                    <FaGithubAlt />
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/eliasleguizamon/"
+                    rel="my-github noreferrer"
+                    target="_blank"
+                >
+                    <FaLinkedinIn />
+                </a>
+                <a
+                    href="https://www.hackerrank.com/elias_leguizamo1"
+                    rel="my-github noreferrer"
+                    target="_blank"
+                >
+                    <FaHackerrank />
+                </a>
+            </SimpleGrid>
+            <SimpleGrid
+                align="center"
+                bgColor={useColorModeValue('lBackground', 'background')}
+                columns={1}
+                h="5vh"
+            >
+                <Text>Copyright © 2022 Elías Leguizamón</Text>
+            </SimpleGrid>
         </Box>
     );
 }
