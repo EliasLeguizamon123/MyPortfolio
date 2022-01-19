@@ -1,5 +1,5 @@
 import HorizontalScroll from 'react-scroll-horizontal';
-import { Box, Stack, useColorModeValue } from '@chakra-ui/react';
+import { Box, Stack, useColorModeValue, Text, Flex } from '@chakra-ui/react';
 import Section from './Section';
 // import anime from 'animejs/lib/anime.es.js';
 
@@ -26,12 +26,27 @@ export default function Main() {
     return (
         <Box
             bg={useColorModeValue('lBackground', 'background')}
-            h="100vh"
+            h="95vh"
             ml="10"
         >
-            <HorizontalScroll reverseScroll={'true'}>
+            <HorizontalScroll
+                config={{ stiffness: 100, damping: 26 }}
+                reverseScroll={'true'}
+            >
                 {sections}
             </HorizontalScroll>
+            <Flex
+                align="center"
+                bgColor={useColorModeValue('lBackground', 'background')}
+                direction={'row'}
+                h="5vh"
+                justify={'center'}
+            >
+                <Text>Imagen 1</Text>
+                <Text>Imagen 2</Text>
+                <Text>Imagen 3</Text>
+                <Text>Imagen 4</Text>
+            </Flex>
         </Box>
     );
 }
