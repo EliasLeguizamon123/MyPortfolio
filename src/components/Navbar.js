@@ -5,6 +5,7 @@ import {
     useColorMode,
     Box,
     Text,
+    useColorModeValue,
 } from '@chakra-ui/react';
 import { MdLightbulbOutline, MdLightbulb } from 'react-icons/md';
 import { GiAura } from 'react-icons/gi';
@@ -17,7 +18,8 @@ const Navbar = () => {
 
     return (
         <VStack
-            bg={'tertiary'}
+            bgColor={useColorModeValue('lSecondary', 'primary')}
+            borderRight="1px solid"
             h="full"
             pos="fixed"
             style={{
@@ -41,6 +43,7 @@ const Navbar = () => {
                                 transform: 'scale(1.2)',
                                 color: 'white',
                             }}
+                            colorScheme="lTitles"
                             size="xl"
                             variant="ghost"
                             onClick={toggleColorMode}
@@ -56,6 +59,7 @@ const Navbar = () => {
                                 transform: 'scale(1.2)',
                                 color: 'white',
                             }}
+                            colorScheme="lTitles"
                             size="xl"
                             variant="ghost"
                             onClick={toggleColorMode}
@@ -73,6 +77,7 @@ const Navbar = () => {
                             transform: 'scale(1.2)',
                             color: 'white',
                         }}
+                        colorScheme="lTitles"
                         size="xl"
                         variant="ghost"
                     >
@@ -87,6 +92,7 @@ const Navbar = () => {
                             transform: 'scale(1.2)',
                             color: 'white',
                         }}
+                        colorScheme="lTitles"
                         size="xl"
                         variant="ghost"
                     >
@@ -101,6 +107,7 @@ const Navbar = () => {
                             transform: 'scale(1.2)',
                             color: 'white',
                         }}
+                        colorScheme="lTitles"
                         size="xl"
                         variant="ghost"
                     >
@@ -115,6 +122,7 @@ const Navbar = () => {
                             transform: 'scale(1.2)',
                             color: 'white',
                         }}
+                        colorScheme="lTitles"
                         size="xl"
                         variant="ghost"
                     >

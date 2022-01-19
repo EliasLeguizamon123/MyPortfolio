@@ -1,20 +1,21 @@
-import { Flex, Heading, Box, Text } from '@chakra-ui/react';
+import { Flex, Heading, Box, Text, useColorModeValue } from '@chakra-ui/react';
 
-export default function Section(dummy) {
-    // const { colorMode, toggleColorMode } = useColorMode();
-
+export default function Section() {
     return (
         <Flex align="center" h={'100vh'} justify="center" w={'100vw'}>
             <Box
                 align="center"
-                bg={'secondary'}
+                bg={useColorModeValue('lSecondary', 'background')}
                 borderRadius={'lg'}
                 boxShadow={'dark-lg'}
                 h={'70%'}
                 pt={'6'}
                 w={'60%'}
             >
-                <Heading>{dummy.dummy.name}</Heading>
+                <Heading color={useColorModeValue('lPrimary', 'primary')}>
+                    Title
+                </Heading>
+                {/* content */}
                 <Text p={3}>
                     Aw, why cant couples that start out cheating ever end up
                     happy? God-damn! I mean, why would a poptart want to live

@@ -1,10 +1,7 @@
 import HorizontalScroll from 'react-scroll-horizontal';
-import { Box, Stack } from '@chakra-ui/react';
+import { Box, Stack, useColorModeValue } from '@chakra-ui/react';
 import Section from './Section';
-import BG from '../duneW.svg';
 // import anime from 'animejs/lib/anime.es.js';
-
-//const { colorMode } = useColorMode();
 
 const dummies = [
     { id: 1, name: 'Hi !' },
@@ -28,9 +25,7 @@ const sections = dummies.map((dummy) => (
 export default function Main() {
     return (
         <Box
-            bgImage={BG}
-            bgPosition={'center'}
-            bgSize={'cover'}
+            bg={useColorModeValue('lBackground', 'background')}
             h="100vh"
             ml="10"
         >
