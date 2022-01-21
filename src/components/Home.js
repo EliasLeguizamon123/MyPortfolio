@@ -1,8 +1,8 @@
 import { Flex, Heading, Box, Text, useColorModeValue } from '@chakra-ui/react';
 
-export default function Skills() {
+export default function Home() {
     return (
-        <Flex align="center" h={'100vh'} justify="center" w={'100vw'}>
+        <Flex align="center" h={'90vh'} justify="center" w={'100vw'}>
             <Box
                 align="center"
                 bg={useColorModeValue('lSecondary', 'background')}
@@ -10,11 +10,18 @@ export default function Skills() {
                 boxShadow={'dark-lg'}
                 h={'70%'}
                 pt={'6'}
-                w={'60%'}
+                w={'70%'}
             >
                 <Heading color={useColorModeValue('lPrimary', 'primary')}>
-                    My Skills
+                    Hi, Im Elías Leguizamón
                 </Heading>
+                <Text
+                    as="i"
+                    color={useColorModeValue('lPrimary', 'primary')}
+                    fontSize="lg"
+                >
+                    FullStack Developer
+                </Text>
                 {/* content */}
                 <Text p={3}>
                     Aw, why cant couples that start out cheating ever end up

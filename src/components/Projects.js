@@ -1,6 +1,6 @@
 import { Flex, Heading, Box, Text, useColorModeValue } from '@chakra-ui/react';
 
-export default function Skills() {
+export default function Projects() {
     return (
         <Flex align="center" h={'100vh'} justify="center" w={'100vw'}>
             <Box
@@ -13,7 +13,7 @@ export default function Skills() {
                 w={'60%'}
             >
                 <Heading color={useColorModeValue('lPrimary', 'primary')}>
-                    My Skills
+                    All my projects are here
                 </Heading>
                 {/* content */}
                 <Text p={3}>
