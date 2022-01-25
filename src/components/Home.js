@@ -1,6 +1,6 @@
 import { Flex, Heading, useColorModeValue, Text, Box } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import { GiDiceFire } from 'react-icons/gi';
+import { GiLightSabers } from 'react-icons/gi';
 
 export default function Home() {
     return (
@@ -30,11 +30,12 @@ export default function Home() {
                             top: 5,
                             bottom: 5,
                         }}
-                        dragElastic={0.2}
+                        dragElastic={0.5}
                         transition={{ duration: 1 }}
                         whileFocus={{ scale: 3.5 }}
+                        onClick={() => alert('This function is not ready yet')}
                     >
-                        <GiDiceFire size={80} />
+                        <GiLightSabers size={80} />
                     </motion.button>
                 </Box>
             </Box>
