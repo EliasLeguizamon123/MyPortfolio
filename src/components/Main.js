@@ -23,7 +23,7 @@ export default function Main() {
             }}
         >
             <HorizontalScroll
-                config={{ stiffness: 100, damping: 26 }}
+                config={{ stiffness: 100, damping: 26, drag: 'x' }}
                 reverseScroll={'true'}
             >
                 <Home />

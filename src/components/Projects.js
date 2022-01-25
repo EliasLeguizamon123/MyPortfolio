@@ -2,13 +2,14 @@ import { Flex, Heading, Box, Text, useColorModeValue } from '@chakra-ui/react';
 
 export default function Projects() {
     return (
-        <Flex align="center" h={'100vh'} justify="center" w={'100vw'}>
+        <Flex h={'100vh'} justify="center" w={'100vw'}>
             <Box
                 align="center"
                 bg={useColorModeValue('lSecondary', 'background')}
                 borderRadius={'lg'}
                 boxShadow={'dark-lg'}
                 h={'70%'}
+                mt={'6'}
                 pt={'6'}
                 w={'60%'}
             >
