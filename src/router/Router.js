@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Spinner from '../utils/Spinner';
 import Navbar from '../components/Navbar';
 import Main from '../components/Main';
 import Skills from '../components/Skills';
@@ -27,7 +26,6 @@ export default function Routers() {
                     <Route exact element={<Projects />} path="/projects" />
                     <Route exact element={<About />} path="/about" />
                     <Route exact element={<Contact />} path="/contact" />
-                    <Route exact element={<Spinner />} path="/test" />
                 </Routes>
             </Box>
         </Router>
