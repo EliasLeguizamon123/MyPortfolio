@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Suspense } from 'react';
 import Spinner from '../utils/Spinner';
 import Navbar from '../components/Navbar';
 import Main from '../components/Main';
