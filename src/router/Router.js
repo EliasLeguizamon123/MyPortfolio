@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Header from '../components/Header';
+import { Suspense } from 'react';
+import Spinner from '../utils/Spinner';
 import Navbar from '../components/Navbar';
 import Main from '../components/Main';
 import Skills from '../components/Skills';
@@ -12,14 +13,23 @@ export default function Routers() {
     return (
         <Router>
             <Box>
-                <Navbar />
-                <Routes>
-                    <Route exact element={<Main />} path="/" />
-                    <Route exact element={<Skills />} path="/skills" />
-                    <Route exact element={<Projects />} path="/projects" />
-                    <Route exact element={<About />} path="/about" />
-                    <Route exact element={<Contact />} path="/contact" />
-                </Routes>
+                <Navbar
+                    weblinks={[
+                        { name: 'Skills', path: '/skills' },
+                        { name: 'About', path: '/about' },
+                        { name: 'Projects', path: '/projects' },
+                        { name: 'Contact', path: '/contact' },
+                    ]}
+                />
+                <Suspense fallback={<Spinner />}>
+                    <Routes>
+                        <Route exact element={<Main />} path="/" />
+                        <Route exact element={<Skills />} path="/skills" />
+                        <Route exact element={<Projects />} path="/projects" />
+                        <Route exact element={<About />} path="/about" />
+                        <Route exact element={<Contact />} path="/contact" />
+                    </Routes>
+                </Suspense>
             </Box>
         </Router>
     );
