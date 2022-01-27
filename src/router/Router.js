@@ -21,16 +21,15 @@ export default function Routers() {
                         { name: 'Contact', path: '/contact' },
                     ]}
                 />
-                <Suspense fallback={<Spinner />}>
-                    <Routes>
-                        <Route exact element={<Main />} path="/" />
-                        <Route exact element={<Skills />} path="/skills" />
-                        <Route exact element={<Projects />} path="/projects" />
-                        <Route exact element={<About />} path="/about" />
-                        <Route exact element={<Contact />} path="/contact" />
-                        <Route exact element={<Spinner />} path="/test" />
-                    </Routes>
-                </Suspense>
+
+                <Routes>
+                    <Route exact element={<Main />} path="/" />
+                    <Route exact element={<Skills />} path="/skills" />
+                    <Route exact element={<Projects />} path="/projects" />
+                    <Route exact element={<About />} path="/about" />
+                    <Route exact element={<Contact />} path="/contact" />
+                    <Route exact element={<Spinner />} path="/test" />
+                </Routes>
             </Box>
         </Router>
     );
