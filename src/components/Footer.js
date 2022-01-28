@@ -3,7 +3,7 @@ import { FaGithubAlt, FaLinkedinIn, FaHackerrank } from 'react-icons/fa';
 
 export default function Footer() {
     return (
-        <Box align="center" h="5.3rem" p="4">
+        <Box align="center" pt="12">
             <SimpleGrid
                 align="center"
                 bgColor={useColorModeValue('lBackground', 'background')}

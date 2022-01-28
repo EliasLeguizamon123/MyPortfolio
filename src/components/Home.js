@@ -1,5 +1,4 @@
 import {
-    Flex,
     Heading,
     useColorModeValue,
     Text,
@@ -10,34 +9,32 @@ import {
 
 export default function Home() {
     return (
-        <Flex align="center" h={'80vh'} justify="center">
-            <Box align="center">
-                <Image
-                    borderRadius="full"
-                    boxSize="150px"
-                    pb="10px"
-                    src="https://via.placeholder.com/150"
-                />
-                <Heading
-                    color={useColorModeValue('lPrimary', 'primary')}
-                    fontSize="2xl"
-                >
-                    Hi!, Im Elias Leguizamon
-                </Heading>
-                <Text
-                    as="i"
-                    className="typingTitle"
-                    color={useColorModeValue('lPrimary', 'primary')}
-                    fontSize={'lg'}
-                >
-                    {`<Fullstack Developer />`}
-                </Text>
-                <Container pt={4}>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quidem. lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Quisquam, quidem. lorem ipsum dolor sit
-                </Container>
-            </Box>
-        </Flex>
+        <Box align="center" pt="12">
+            <Image
+                borderRadius="full"
+                boxSize="150px"
+                pb="10px"
+                src="https://via.placeholder.com/150"
+            />
+            <Heading
+                color={useColorModeValue('lPrimary', 'primary')}
+                fontSize="2xl"
+            >
+                Hi!, Im Elias Leguizamon
+            </Heading>
+            <Text
+                as="i"
+                className="typingTitle"
+                color={useColorModeValue('lPrimary', 'primary')}
+                fontSize={'lg'}
+            >
+                {`<Fullstack Developer />`}
+            </Text>
+            <Container pt={4}>
+                lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quidem. lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quisquam, quidem. lorem ipsum dolor sit
+            </Container>
+        </Box>
     );
 }

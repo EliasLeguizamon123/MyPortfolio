@@ -1,15 +1,24 @@
 import './App.css';
-import { Box, useColorModeValue } from '@chakra-ui/react';
-import Router from './router/Router';
+import { Flex, useColorModeValue } from '@chakra-ui/react';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 
 function App() {
     return (
-        <Box
+        <Flex
+            align="center"
             bgColor={useColorModeValue('lBackground', 'background')}
-            w={'100vw'}
+            direction="column"
+            justify="center"
+            w={'full'}
         >
-            <Router />
-        </Box>
+            <Navbar />
+            <Home />
+            <Gallery />
+            <Footer />
+        </Flex>
     );
 }
 export default App;
