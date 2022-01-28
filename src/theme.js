@@ -7,16 +7,10 @@ const theme = extendTheme({
     },
     colors: {
         primary: '#75AD63',
-        secondary: '#fd971f',
-        tertiary: '#f92672',
-        fourth: '#66d9ef',
-        titles: '#a6e22e',
         background: '#333333',
 
         lBackground: '#FFFFFF',
         lTitles: '#9E9A9A',
-        lFourth: '#66d9ef',
-        lTertiary: '#',
         lSecondary: '#EAF5E9',
         lPrimary: '#43853D',
     },

@@ -1,43 +1,14 @@
-import HorizontalScroll from 'react-scroll-horizontal';
-import { Box, useColorModeValue, SimpleGrid, Text } from '@chakra-ui/react';
-import Home from './Home';
-import Skills from './Skills';
-import Projects from './Projects';
-import About from './About';
-import Contact from './Contact';
-
+import { SimpleGrid, Box, Text, useColorModeValue } from '@chakra-ui/react';
 import { FaGithubAlt, FaLinkedinIn, FaHackerrank } from 'react-icons/fa';
 
-export default function Main() {
+export default function Footer() {
     return (
-        <Box
-            alignItems={'center'}
-            bg={useColorModeValue('lBackground', 'background')}
-            display={['flow-root', 'flow-root', 'block', 'block']}
-            h="92vh"
-            ml={'12'}
-            sx={{
-                '@media only screen and (max-width: 768px)': {
-                    ml: 0,
-                },
-            }}
-        >
-            <HorizontalScroll
-                config={{ stiffness: 100, damping: 26, drag: 'x' }}
-                reverseScroll={'true'}
-            >
-                <Home />
-                <Skills />
-                <Projects />
-                <About />
-                <Contact />
-            </HorizontalScroll>
+        <Box align="center" h="5.3rem" p="4">
             <SimpleGrid
                 align="center"
                 bgColor={useColorModeValue('lBackground', 'background')}
                 columns={3}
-                h="4vh"
-                spacing={4}
+                spacing="2"
             >
                 <a
                     href="https://github.com/EliasLeguizamon123"
@@ -65,7 +36,7 @@ export default function Main() {
                 align="center"
                 bgColor={useColorModeValue('lBackground', 'background')}
                 columns={1}
-                h="4vh"
+                spacing="2"
             >
                 <Text>Copyright © 2022 Elías Leguizamón</Text>
             </SimpleGrid>

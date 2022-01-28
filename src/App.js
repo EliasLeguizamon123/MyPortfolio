@@ -4,7 +4,10 @@ import Router from './router/Router';
 
 function App() {
     return (
-        <Box bgColor={useColorModeValue('lBackground', 'background')}>
+        <Box
+            bgColor={useColorModeValue('lBackground', 'background')}
+            w={'100vw'}
+        >
             <Router />
         </Box>
     );
