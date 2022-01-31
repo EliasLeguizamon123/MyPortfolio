@@ -20,7 +20,7 @@ export default function Home() {
                 color={useColorModeValue('lPrimary', 'primary')}
                 fontSize="2xl"
             >
-                {`Hi!, I'm Elias Leguizamon`}
+                {`Hi!, I'm Elías`}
             </Heading>
             <Text
                 as="i"
