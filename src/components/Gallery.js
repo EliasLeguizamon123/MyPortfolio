@@ -4,7 +4,9 @@ import {
     Box,
     Text,
     useColorModeValue,
+    Flex,
 } from '@chakra-ui/react';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 export default function Gallery() {
     return (
@@ -17,64 +19,66 @@ export default function Gallery() {
                 My proyects
             </Text>
             <SimpleGrid
-                columns={[1, 2, 4]}
+                columns={[1, 2, 2]}
                 spacingX="10"
                 spacingY="10"
                 w={'max-content'}
             >
-                <Box>
+                <Box
+                    _hover={{
+                        transform: 'translate(0px, -10px)',
+                        transitionDuration: '1s',
+                    }}
+                    as="button"
+                    role="group"
+                >
                     <Image
                         borderRadius={'10px'}
+                        boxSize={'300px'}
                         src="https://via.placeholder.com/150"
                     />
-                    <Text as="i" color="gray.300" fontSize="xs">
-                        Example 1
-                    </Text>
+                    <Flex justify={'space-between'}>
+                        <Text as="i" color="gray.300" fontSize="xs">
+                            Example 1
+                        </Text>
+                        <ArrowForwardIcon
+                            _groupHover={{
+                                color: 'rgba(180, 180, 180, 1)',
+                                transform: 'translatex(-12px)',
+                                transitionDuration: '1s',
+                            }}
+                            className="text"
+                            color="rgba(180, 180, 180, 0)"
+                        />
+                    </Flex>
                 </Box>
-                <Box>
+                <Box
+                    _hover={{
+                        transform: 'translate(0px, -10px)',
+                        transitionDuration: '1s',
+                    }}
+                    as="button"
+                    role="group"
+                >
                     <Image
                         borderRadius={'10px'}
+                        boxSize={'300px'}
                         src="https://via.placeholder.com/150"
                     />
-                    <Text as="i" color="gray.300" fontSize="xs">
-                        Example 2
-                    </Text>
-                </Box>
-                <Box>
-                    <Image
-                        borderRadius={'10px'}
-                        src="https://via.placeholder.com/150"
-                    />
-                    <Text as="i" color="gray.300" fontSize="xs">
-                        Example 3
-                    </Text>
-                </Box>
-                <Box>
-                    <Image
-                        borderRadius={'10px'}
-                        src="https://via.placeholder.com/150"
-                    />
-                    <Text as="i" color="gray.300" fontSize="xs">
-                        Example 4
-                    </Text>
-                </Box>
-                <Box>
-                    <Image
-                        borderRadius={'10px'}
-                        src="https://via.placeholder.com/150"
-                    />
-                    <Text as="i" color="gray.300" fontSize="xs">
-                        Example 5
-                    </Text>
-                </Box>
-                <Box>
-                    <Image
-                        borderRadius={'10px'}
-                        src="https://via.placeholder.com/150"
-                    />
-                    <Text as="i" color="gray.300" fontSize="xs">
-                        Example 6
-                    </Text>
+                    <Flex justify={'space-between'}>
+                        <Text as="i" color="gray.300" fontSize="xs">
+                            Example 2
+                        </Text>
+                        <ArrowForwardIcon
+                            _groupHover={{
+                                color: 'rgba(180, 180, 180, 1)',
+                                transform: 'translatex(-12px)',
+                                transitionDuration: '1s',
+                            }}
+                            className="text"
+                            color="rgba(180, 180, 180, 0)"
+                        />
+                    </Flex>
                 </Box>
             </SimpleGrid>
         </Box>

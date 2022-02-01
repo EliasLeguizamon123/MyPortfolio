@@ -14,8 +14,11 @@ export default function Home() {
             <Image
                 borderRadius="full"
                 boxSize="150px"
+                fallback="https://via.placeholder.com/150"
                 pb="10px"
-                src="https://via.placeholder.com/150"
+                src={
+                    'https://avatars.githubusercontent.com/u/25516473?s=400&u=58049da37eaf5d050270ef502caacfb79c9f8dda&v=4'
+                }
             />
             <Heading
                 color={useColorModeValue('lPrimary', 'primary')}
@@ -34,7 +37,7 @@ export default function Home() {
             <Container pt={4}>
                 lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam, quidem. lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam, quidem. lorem ipsum dolor sit
+                adipisicing elit. Quisquam, quidem. lorem ipsum dolor si
             </Container>
             <Tecnologies />
             <Gallery />
