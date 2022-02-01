@@ -3,11 +3,12 @@ import { FaGithubAlt, FaLinkedinIn, FaHackerrank } from 'react-icons/fa';
 
 export default function Footer() {
     return (
-        <Box align="center" pt="12">
+        <Box align="center" pt="12" w="full">
             <SimpleGrid
                 align="center"
-                bgColor={useColorModeValue('lBackground', 'background')}
+                bgColor={useColorModeValue('lSecondary', 'primary')}
                 columns={3}
+                p={2}
                 spacing="2"
             >
                 <a
@@ -15,30 +16,38 @@ export default function Footer() {
                     rel="my-github noreferrer"
                     target="_blank"
                 >
-                    <FaGithubAlt />
+                    <FaGithubAlt
+                        color={useColorModeValue('primary', 'lPrimary')}
+                    />
                 </a>
                 <a
                     href="https://www.linkedin.com/in/eliasleguizamon/"
                     rel="my-github noreferrer"
                     target="_blank"
                 >
-                    <FaLinkedinIn />
+                    <FaLinkedinIn
+                        color={useColorModeValue('primary', 'lPrimary')}
+                    />
                 </a>
                 <a
                     href="https://www.hackerrank.com/elias_leguizamo1"
                     rel="my-github noreferrer"
                     target="_blank"
                 >
-                    <FaHackerrank />
+                    <FaHackerrank
+                        color={useColorModeValue('primary', 'lPrimary')}
+                    />
                 </a>
             </SimpleGrid>
             <SimpleGrid
                 align="center"
-                bgColor={useColorModeValue('lBackground', 'background')}
+                bgColor={useColorModeValue('lSecondary', 'primary')}
                 columns={1}
                 spacing="2"
             >
-                <Text>Copyright © 2022 Elías Leguizamón</Text>
+                <Text color={useColorModeValue('primary', 'lPrimary')}>
+                    Copyright © 2022 Elías Leguizamón
+                </Text>
             </SimpleGrid>
         </Box>
     );

@@ -12,14 +12,15 @@ export default function Gallery() {
     return (
         <Box align="center" pt={32}>
             <Text
+                as="i"
                 color={useColorModeValue('lPrimary', 'primary')}
                 fontSize={'lg'}
-                pb="6"
             >
                 My proyects
             </Text>
             <SimpleGrid
                 columns={[1, 2, 2]}
+                pt={4}
                 spacingX="10"
                 spacingY="10"
                 w={'max-content'}

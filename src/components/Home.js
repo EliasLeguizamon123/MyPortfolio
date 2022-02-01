@@ -35,9 +35,11 @@ export default function Home() {
                 {`<Fullstack Developer />`}
             </Text>
             <Container pt={4}>
-                lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quidem. lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam, quidem. lorem ipsum dolor si
+                I have passion for creating and learn new things constantly.
+                <br />
+                Also Open Source lover and i try to contribute with the
+                community.
+                <br />I have a minimalist mindset, i love team work too.
             </Container>
             <Tecnologies />
             <Gallery />
