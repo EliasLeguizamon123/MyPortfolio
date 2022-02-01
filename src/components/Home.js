@@ -6,8 +6,10 @@ import {
     Image,
     Container,
 } from '@chakra-ui/react';
-import Gallery from './Gallery';
+
 import Tecnologies from './Tecnologies';
+import Timeline from './Timeline';
+import Gallery from './Gallery';
 export default function Home() {
     return (
         <Box align="center" pt="12">
@@ -42,6 +44,7 @@ export default function Home() {
                 <br />I have a minimalist mindset, i love team work too.
             </Container>
             <Tecnologies />
+            <Timeline />
             <Gallery />
         </Box>
     );
