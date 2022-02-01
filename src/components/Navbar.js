@@ -22,7 +22,15 @@ const Navbar = () => {
             w="full"
         >
             <Box>
-                <Link to="/">{`Elías Leguizamón`}</Link>
+                <Link to="/">
+                    <Text
+                        _hover={{
+                            textDecoration: 'underline',
+                            color: 'green.800',
+                        }}
+                        as="i"
+                    >{`Elías Leguizamón`}</Text>
+                </Link>
             </Box>
             <Box alignItems={'center'}>
                 {colorMode === 'light' ? (

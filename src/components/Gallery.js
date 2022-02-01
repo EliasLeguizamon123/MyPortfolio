@@ -19,7 +19,7 @@ export default function Gallery() {
                 My proyects
             </Text>
             <SimpleGrid
-                columns={[1, 2, 2]}
+                columns={[1, 1, 2, 2]}
                 pt={4}
                 spacingX="10"
                 spacingY="10"

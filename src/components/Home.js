@@ -35,7 +35,7 @@ export default function Home() {
                 {`<Fullstack Developer />`}
             </Text>
             <Container pt={4}>
-                I have passion for creating and learn new things constantly.
+                I have passion for create and learn new things constantly.
                 <br />
                 Also Open Source lover and i try to contribute with the
                 community.
