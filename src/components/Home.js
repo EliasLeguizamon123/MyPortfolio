@@ -6,7 +6,8 @@ import {
     Image,
     Container,
 } from '@chakra-ui/react';
-
+import Gallery from './Gallery';
+import Tecnologies from './Tecnologies';
 export default function Home() {
     return (
         <Box align="center" pt="12">
@@ -35,6 +36,8 @@ export default function Home() {
                 Quisquam, quidem. lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Quisquam, quidem. lorem ipsum dolor sit
             </Container>
+            <Tecnologies />
+            <Gallery />
         </Box>
     );
 }

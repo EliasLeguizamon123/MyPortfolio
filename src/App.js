@@ -1,9 +1,6 @@
 import './App.css';
 import { Flex, useColorModeValue } from '@chakra-ui/react';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Gallery from './components/Gallery';
-import Footer from './components/Footer';
+import Router from './routes/Router';
 
 function App() {
     return (
@@ -14,10 +11,7 @@ function App() {
             justify="center"
             w={'full'}
         >
-            <Navbar />
-            <Home />
-            <Gallery />
-            <Footer />
+            <Router />
         </Flex>
     );
 }
