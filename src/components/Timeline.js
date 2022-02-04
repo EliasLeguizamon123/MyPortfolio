@@ -1,36 +1,25 @@
 import { Chrono } from 'react-chrono';
-import { Box, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Text, useColorModeValue, Spinner } from '@chakra-ui/react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 export default function Timeline() {
-    const items = [
-        {
-            title: 'May 1940',
-            cardTitle: 'Dunkirk',
-            url: 'http://www.history.com',
-            cardSubtitle:
-                'Men of the British Expeditionary Force (BEF) wade out to..',
-            cardDetailedText:
-                'Men of the British Expeditionary Force (BEF) wade out to..',
-        },
-        {
-            title: 'May 1950',
-            cardTitle: 'Dunkirk',
-            url: 'http://www.history.com',
-            cardSubtitle:
-                'Men of the British Expeditionary Force (BEF) wade out to..',
-            cardDetailedText:
-                'Men of the British Expeditionary Force (BEF) wade out to..',
-        },
-        {
-            title: 'May 1960',
-            cardTitle: 'Dunkirk',
-            url: 'http://www.history.com',
-            cardSubtitle:
-                'Men of the British Expeditionary Force (BEF) wade out to..',
-            cardDetailedText:
-                'Men of the British Expeditionary Force (BEF) wade out to..',
-        },
-    ];
+    const [timeline, setTimeline] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+
+    const fetchTimeline = async () => {
+        const response = await axios.get(
+            'https://portfolio-backend-el.herokuapp.com/timeline'
+        );
+        const data = await response.data.data;
+
+        setTimeline(() => data);
+        setIsLoading(false);
+    };
+
+    useEffect(() => {
+        fetchTimeline();
+    }, []);
 
     return (
         <Box align="center" pt={32}>
@@ -41,19 +30,35 @@ export default function Timeline() {
             >
                 My Timeline
             </Text>
-            <Chrono
-                hideControls="true"
-                items={items}
-                mode="VERTICAL_ALTERNATING"
-                slideShow="true"
-                theme={{
-                    primary: '#75AD63',
-                    secondary: '#EAF5E9',
-                    cardBgColor: '#DCDBDB',
-                    cardForeColor: 'black',
-                    titleColor: '#75AD63',
-                }}
-            />
+            {isLoading ? (
+                <Box
+                    alignItems={'center'}
+                    display={'flex'}
+                    h={'80vh'}
+                    justifyContent={'center'}
+                >
+                    <Spinner
+                        color="primary"
+                        emptyColor="gray.200"
+                        size="xl"
+                        speed="0.8s"
+                    />
+                </Box>
+            ) : (
+                <Chrono
+                    hideControls="true"
+                    items={timeline}
+                    mode="VERTICAL_ALTERNATING"
+                    slideShow="true"
+                    theme={{
+                        primary: '#75AD63',
+                        secondary: '#EAF5E9',
+                        cardBgColor: '#DCDBDB',
+                        cardForeColor: 'black',
+                        titleColor: '#75AD63',
+                    }}
+                />
+            )}
         </Box>
     );
 }
