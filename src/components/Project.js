@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import { Text } from '@chakra-ui/react';
+import { Container, Box, Heading, SimpleGrid, Image } from '@chakra-ui/react';
 
 export default function Project() {
     const [project, setProject] = useState([]);
@@ -20,5 +20,23 @@ export default function Project() {
         getProject();
     }, []);
 
-    return <Text> {project} </Text>;
+    return (
+        <Box pt="12">
+            <SimpleGrid columns={[1, 1, 2, 2]} w={'max-content'}>
+                <Box>
+                    <Heading>{project.title}</Heading>
+                    <Container pt="4">{project.description}</Container>
+                </Box>
+                <Box>
+                    <Image
+                        bgPosition="center"
+                        borderRadius={'10px'}
+                        boxSize={'400px'}
+                        objectFit="cover"
+                        src="https://via.placeholder.com/150"
+                    />
+                </Box>
+            </SimpleGrid>
+        </Box>
+    );
 }

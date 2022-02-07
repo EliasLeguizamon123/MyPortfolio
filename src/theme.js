@@ -15,7 +15,7 @@ const theme = extendTheme({
         lPrimary: '#43853D',
     },
     config: {
-        initialColorMode: 'light',
+        initialColorMode: 'dark',
         useSystemColorMode: false,
     },
 });

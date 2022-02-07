@@ -10,11 +10,11 @@ import {
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function Gallery() {
     const [gallery, setGallery] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-
     const fetchGallery = async () => {
         const response = await axios.get(
             'https://portfolio-backend-el.herokuapp.com/projects'
@@ -61,38 +61,40 @@ export default function Gallery() {
                     </Box>
                 ) : (
                     gallery.map((project) => (
-                        <Box
-                            key={project.id}
-                            _hover={{
-                                transform: 'translate(0px, -10px)',
-                                transitionDuration: '1s',
-                            }}
-                            as="button"
-                            role="group"
-                        >
-                            <Image
-                                bgPosition="center"
-                                borderRadius={'10px'}
-                                boxSize={'400px'}
-                                fallbackSrc="https://via.placeholder.com/150"
-                                objectFit="cover"
-                                src={project.images[0]}
-                            />
-                            <Flex justify={'space-between'}>
-                                <Text as="i" color="gray.300" fontSize="xs">
-                                    {project.title}
-                                </Text>
-                                <ArrowForwardIcon
-                                    _groupHover={{
-                                        color: 'rgba(180, 180, 180, 1)',
-                                        transform: 'translatex(-12px)',
-                                        transitionDuration: '1s',
-                                    }}
-                                    className="text"
-                                    color="rgba(180, 180, 180, 0)"
+                        <Link key={project.id} to={`/projects/${project.id}`}>
+                            <Box
+                                key={project.id}
+                                _hover={{
+                                    transform: 'translate(0px, -10px)',
+                                    transitionDuration: '1s',
+                                }}
+                                as="button"
+                                role="group"
+                            >
+                                <Image
+                                    bgPosition="center"
+                                    borderRadius={'10px'}
+                                    boxSize={'400px'}
+                                    fallbackSrc="https://via.placeholder.com/150"
+                                    objectFit="cover"
+                                    src={project.images[0]}
                                 />
-                            </Flex>
-                        </Box>
+                                <Flex justify={'space-between'}>
+                                    <Text as="i" color="gray.300" fontSize="xs">
+                                        {project.title}
+                                    </Text>
+                                    <ArrowForwardIcon
+                                        _groupHover={{
+                                            color: 'rgba(180, 180, 180, 1)',
+                                            transform: 'translatex(-12px)',
+                                            transitionDuration: '1s',
+                                        }}
+                                        className="text"
+                                        color="rgba(180, 180, 180, 0)"
+                                    />
+                                </Flex>
+                            </Box>
+                        </Link>
                     ))
                 )}
             </SimpleGrid>
