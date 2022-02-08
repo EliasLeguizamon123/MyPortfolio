@@ -74,7 +74,12 @@ export default function Gallery() {
                                 <Image
                                     bgPosition="center"
                                     borderRadius={'10px'}
-                                    boxSize={'400px'}
+                                    boxSize={[
+                                        '150px',
+                                        '300px',
+                                        '400px',
+                                        '400px',
+                                    ]}
                                     fallbackSrc="https://via.placeholder.com/150"
                                     objectFit="cover"
                                     src={project.images[0]}
