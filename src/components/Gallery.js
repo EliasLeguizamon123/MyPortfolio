@@ -75,7 +75,7 @@ export default function Gallery() {
                                     bgPosition="center"
                                     borderRadius={'10px'}
                                     boxSize={[
-                                        '150px',
+                                        '200px',
                                         '300px',
                                         '400px',
                                         '400px',
