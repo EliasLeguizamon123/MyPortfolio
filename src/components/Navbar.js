@@ -26,7 +26,8 @@ const Navbar = () => {
                     <Text
                         _hover={{
                             textDecoration: 'underline',
-                            color: 'green.800',
+                            color: 'black',
+                            transitionDuration: '0.5s',
                         }}
                         as="i"
                     >{`Elías Leguizamón`}</Text>
