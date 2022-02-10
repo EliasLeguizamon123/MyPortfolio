@@ -37,28 +37,13 @@ export default function Project() {
     }, []);
 
     return (
-        <Flex pt="12">
+        <Flex pb="12" pt="12">
             <SimpleGrid
                 columns={[1, 1, 2, 2]}
                 spacingX="7"
                 spacingY="7"
                 w={'max-content'}
             >
-                <Flex
-                    align="center"
-                    direction="row"
-                    display={['Flex', 'Flex', 'none']}
-                    ml="60"
-                >
-                    <Text fontFamily={'JetBrains Mono'} fontSize="1xl">
-                        Back
-                    </Text>
-                    <Link to="/">
-                        <Button size="lg" variant="ghost">
-                            <BsArrowBarLeft size="md" />
-                        </Button>
-                    </Link>
-                </Flex>
                 <Box>
                     <Heading fontSize="3xl" pb="4">
                         {project.title}

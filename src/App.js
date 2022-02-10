@@ -8,6 +8,7 @@ function App() {
             align="center"
             bgColor={useColorModeValue('lBackground', 'background')}
             direction="column"
+            h="100%"
             justify="center"
             w={'full'}
         >
