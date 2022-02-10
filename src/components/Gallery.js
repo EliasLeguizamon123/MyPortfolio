@@ -80,7 +80,7 @@ export default function Gallery() {
                                         '400px',
                                         '400px',
                                     ]}
-                                    fallbackSrc="https://via.placeholder.com/150"
+                                    fallbackSrc="https://github.com/EliasLeguizamon123/MyPortfolio/blob/main/404.png?raw=true"
                                     objectFit="cover"
                                     src={project.images[0]}
                                 />
