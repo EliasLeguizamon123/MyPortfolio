@@ -137,7 +137,7 @@ export default function Project() {
                             bgPosition="center"
                             borderRadius={'10px'}
                             boxSize={['200px', '300px', '400px', '400px']}
-                            fallbackSrc="https://via.placeholder.com/150"
+                            fallbackSrc="https://github.com/EliasLeguizamon123/MyPortfolio/blob/main/404.png?raw=true"
                             objectFit="cover"
                             src={project.images}
                         />
