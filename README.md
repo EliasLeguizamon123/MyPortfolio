@@ -1,4 +1,5 @@
 # Portfolio Elías Leguizamón
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1fd8aef8-3137-425e-9f9a-a1efe8d97a60/deploy-status)](https://app.netlify.com/sites/eliasleguizamon-dev/deploys)
 ## Tecnologies i use for this
 
 - NodeJS 
