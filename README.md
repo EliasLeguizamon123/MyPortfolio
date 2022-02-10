@@ -29,4 +29,5 @@
 
 ![HomeLight](https://github.com/EliasLeguizamon123/MyPortfolio/blob/main/public/portfolio1.png?raw=true)
 ![HomeDark](https://github.com/EliasLeguizamon123/MyPortfolio/blob/main/public/homeDark.png?raw=true)
+![projectDark](https://github.com/EliasLeguizamon123/MyPortfolio/blob/main/public/projDark.png?raw=true)
 
