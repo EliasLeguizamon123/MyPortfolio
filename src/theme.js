@@ -1,13 +1,41 @@
-import { extendTheme } from "@chakra-ui/react"
+import { extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
-    colors: {
-      blueLight: '#9AC9FB',
-      yellowLight: '#FFF2A4',
+    fonts: {
+        heading: 'JetBrains Mono, monospace',
+        Text: 'Ubuntu, sans-serif',
     },
-  config: {
-    initialColorMode: "light"
-  }
-})
+    colors: {
+        primary: '#75AD63',
+        background: '#333333',
 
-export default theme
+        lBackground: '#FFFFFF',
+        lTitles: '#9E9A9A',
+        lSecondary: '#EAF5E9',
+        lPrimary: '#43853D',
+    },
+    config: {
+        initialColorMode: 'dark',
+    },
+});
+
+// const dune = extendTheme({
+//     colors: {
+//         primary: '#7FC2C2',
+//         secondary: '#E1774B',
+//         tertiary: '#F4DB60',
+//     },
+// });
+
+// const samurai = extendTheme({
+//     colors: {
+//         primary: '#000000',
+//         secondary: '#989C94',
+//         tertiary: '#C21515',
+//     },
+//     config: {
+//         initialColorMode: 'dark',
+//     },
+// });
+
+export default theme;
