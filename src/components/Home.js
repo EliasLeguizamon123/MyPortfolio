@@ -7,7 +7,7 @@ import {
     Container,
 } from '@chakra-ui/react';
 
-import Tecnologies from './Tecnologies';
+import Technologies from './Technologies';
 import Timeline from './Timeline';
 import Gallery from './Gallery';
 export default function Home() {
@@ -36,14 +36,14 @@ export default function Home() {
             >
                 {`<Fullstack Developer />`}
             </Text>
-            <Container pt={4}>
+            <Container centerContent pt={4}>
                 I have passion for create and learn new things constantly.
                 <br />
                 Also Open Source lover and i try to contribute with the
                 community.
                 <br />I have a minimalist mindset, i love team work too.
             </Container>
-            <Tecnologies />
+            <Technologies />
             <Timeline />
             <Gallery />
         </Box>

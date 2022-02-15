@@ -23,7 +23,7 @@ import {
     SiSequelize,
 } from 'react-icons/si';
 import { DiLinux, DiGit } from 'react-icons/di';
-export default function Tecnologies() {
+export default function Technologies() {
     return (
         <Box align="center" pt={12}>
             <Text
@@ -32,7 +32,7 @@ export default function Tecnologies() {
                 fontSize={'lg'}
                 pb="6"
             >
-                Tecnologies i love to use
+                Technologies i love to use
             </Text>
             <SimpleGrid
                 columns={[3, 5, 5, 7]}
