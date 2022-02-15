@@ -38,7 +38,7 @@ export default function Home() {
             >
                 {`<Fullstack Developer />`}
             </Text>
-            <Container align="left" pt={4}>
+            <Container align="left" pb="12" pt={4}>
                 I have passion for create and learn new things constantly.
                 <br />
                 Also Open Source lover and i try to contribute with the
@@ -49,7 +49,7 @@ export default function Home() {
                 as="i"
                 color={useColorModeValue('lPrimary', 'primary')}
                 fontSize={'lg'}
-                pt="6"
+                pt="12"
             >
                 You can contact me at:
             </Text>
