@@ -49,7 +49,6 @@ export default function Timeline() {
                     hideControls="true"
                     items={timeline}
                     mode="VERTICAL_ALTERNATING"
-                    slideShow="true"
                     theme={{
                         primary: '#75AD63',
                         secondary: '#EAF5E9',

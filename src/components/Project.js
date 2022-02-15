@@ -122,7 +122,7 @@ export default function Project() {
                         pt="12"
                     >
                         <Link to="/">
-                            <Button size="lg" variant="ghost">
+                            <Button size="md" variant="ghost">
                                 <BsArrowBarLeft size="md" />
                             </Button>
                         </Link>
