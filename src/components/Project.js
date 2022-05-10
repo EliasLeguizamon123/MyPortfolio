@@ -122,8 +122,8 @@ export default function Project() {
                         pt="12"
                     >
                         <Link to="/">
-                            <Button size="md" variant="ghost">
-                                <BsArrowBarLeft size="md" />
+                            <Button variant="ghost">
+                                <BsArrowBarLeft size="20px" />
                             </Button>
                         </Link>
                         <Text fontFamily={'JetBrains Mono'} fontSize="1xl">

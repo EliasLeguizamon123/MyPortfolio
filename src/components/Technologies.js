@@ -11,6 +11,8 @@ import {
     DiScrum,
     DiWindows,
     DiBootstrap,
+    DiAngularSimple,
+    DiIonic,
 } from 'react-icons/di';
 import {
     SiMocha,
@@ -21,6 +23,7 @@ import {
     SiPug,
     SiExpress,
     SiSequelize,
+    SiDocker,
 } from 'react-icons/si';
 import { DiLinux, DiGit } from 'react-icons/di';
 export default function Technologies() {
@@ -68,6 +71,10 @@ export default function Technologies() {
                     color={useColorModeValue('black', 'white')}
                     size={32}
                 />
+                <DiAngularSimple
+                    color={useColorModeValue('black', 'white')}
+                    size={32}
+                />
                 <DiNpm color={useColorModeValue('black', 'white')} size={32} />
                 <DiGit color={useColorModeValue('black', 'white')} size={32} />
                 <SiSequelize
@@ -99,8 +106,16 @@ export default function Technologies() {
                     color={useColorModeValue('black', 'white')}
                     size={32}
                 />
+                <DiIonic
+                    color={useColorModeValue('black', 'white')}
+                    size={32}
+                />
                 <SiPug color={useColorModeValue('black', 'white')} size={32} />
                 <DiHeroku
+                    color={useColorModeValue('black', 'white')}
+                    size={32}
+                />
+                <SiDocker
                     color={useColorModeValue('black', 'white')}
                     size={32}
                 />
