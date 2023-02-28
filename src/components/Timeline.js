@@ -9,7 +9,7 @@ export default function Timeline() {
 
     const fetchTimeline = async () => {
         const response = await axios.get(
-            'https://portfolio-backend-el.herokuapp.com/timeline'
+            'https://eliasleguizamon.deno.dev/timeline'
         );
         const data = await response.data.data;
 

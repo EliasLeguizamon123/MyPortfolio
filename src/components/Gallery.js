@@ -17,7 +17,7 @@ export default function Gallery() {
     const [isLoading, setIsLoading] = useState(true);
     const fetchGallery = async () => {
         const response = await axios.get(
-            'https://portfolio-backend-el.herokuapp.com/projects'
+            'https://eliasleguizamon.deno.dev/projects'
         );
         const data = await response.data.data;
 

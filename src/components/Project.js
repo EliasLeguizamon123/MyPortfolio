@@ -24,7 +24,7 @@ export default function Project() {
 
     const getProject = async () => {
         const response = await axios.get(
-            `https://portfolio-backend-el.herokuapp.com/projects/${id}`
+            `https://eliasleguizamon.deno.dev/projects/${id}`
         );
         const data = await response.data.data;
 
