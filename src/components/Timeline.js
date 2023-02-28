@@ -11,8 +11,9 @@ export default function Timeline() {
         const response = await axios.get(
             'https://eliasleguizamon.deno.dev/timeline'
         );
-        const data = await response.data.data;
+        const data = await response.data;
 
+        console.log(data);
         setTimeline(() => data);
         setIsLoading(false);
     };
